@@ -21,7 +21,7 @@ fun main(){
     println()
     payment("Sonja",30.00)
     println("-----------Einzahlung-----------\n")
-    deposit("Martin",30.00)//Einzahlung wird getätigt
+    deposit("Martin",30.00)//Auszahlung wird getätigt
     println()
     deposit("Max",30.00)
     println()
