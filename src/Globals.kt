@@ -7,7 +7,7 @@ val konten = mutableMapOf<String,Double>(
     "Sonja" to 150.00,
 )
 
-val zinsatz = 1.0
+val zinsatz = 2.0
 val kontoführungskosten = 0.99
 
 val kontenPasswort = mutableMapOf<String,String>(
