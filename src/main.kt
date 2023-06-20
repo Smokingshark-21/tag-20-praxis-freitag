@@ -1,4 +1,6 @@
 fun main(){
+    println(0.1*0.1)
+    return
     println(returnKontobetrag("Max"))//Kontostand eines bestehenden Kontos ausgeben.
     println()
     println(returnKontobetrag("Luckas"))//Fehlermeldung, wenn versucht wird, den Kontostand eines nicht existierenden Kontos auszugeben.

@@ -65,7 +65,7 @@ fun deposit(Kontoinhaber: String,Betrag: Double){
 }
 
 fun inBanktransfer(vonKonto:String,zuKonto:String,Betrag: Double){
-    if (konten.containsKey(vonKonto)&&konten.containsKey(zuKonto)){
+    if (konten.containsKey(vonKonto) && konten.containsKey(zuKonto)){
         if (konten[vonKonto]!! >= Betrag){
             konten[vonKonto]=konten[vonKonto]!!-Betrag
             konten[zuKonto]=konten[zuKonto]!!+Betrag
@@ -100,7 +100,7 @@ fun logIn(){
     if (kontenPasswort.containsKey(a) && konten.containsKey(a)){
         logInpass()
         loginKonto=a
-        menü()
+        menu()
     }else {println("Konto $a konnte nicht gefunden werden.\n")
            logIn()}
 }
@@ -126,7 +126,7 @@ fun logOut(){
     }
 
 }
-fun menü(){
+fun menu(){
     println("Wilkommen $loginKonto\n")
     Thread.sleep(3000)
     println("Wähle eine Option aus\n")
@@ -164,10 +164,10 @@ fun menü(){
 }
 
 fun returnTomenu(){
-    println("\nZurück zum Menü [Ja/Nein]")
+    println("\nZurück zum menu [Ja/Nein]")
     val a = readln()
     when(a){
-        "Ja","ja" -> menü()
+        "Ja","ja" -> menu()
         "Nein","nein" -> {Thread.sleep(2000)
                           returnTomenu()}
     }
