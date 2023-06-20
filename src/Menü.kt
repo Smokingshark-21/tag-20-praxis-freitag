@@ -1,3 +1,3 @@
 fun main(){
-    logIn()
+    logIn()// start befehl für menu siehe funktion.kt
 }
